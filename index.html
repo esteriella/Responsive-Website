@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./fontawesome-free/css/all.min.css" type="text/css">
 </head>
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="./images/oau.jpeg"></a>
+            <a href="index.html"><img src="./images/oau.jpeg" alt="oau" class="logo"></a>
                 <h1>OBAFEMI AWOLOWO UNIVERSITY</h1>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -24,6 +26,7 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     <div class="text-box">
         <h1>World's Biggest University</h1>
@@ -31,6 +34,37 @@
         <a href="" class="hero-btn">Visit Us To Know More</a>
     </div>    
     </section>
-    
+
+<!--Course-->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eligendi exercitationem illo voluptate at vitae reiciendis pariatur aliquid cum iure esse, velit veritatis autem ducimus aspernatur delectus eius rerum saepe!</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, corporis tempore totam fugiat quam soluta? Doloremque nihil consequatur ab odio tempora expedita iste commodi eaque numquam rem, harum est.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, corporis tempore totam fugiat quam soluta? Doloremque nihil consequatur ab odio tempora expedita iste commodi eaque numquam rem, harum est.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduate</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, corporis tempore totam fugiat quam soluta? Doloremque nihil consequatur ab odio tempora expedita iste commodi eaque numquam rem, harum est.</p>
+        </div>
+    </div>
+</section>
+
+
+<!--JavaScript for Toggle Menu-->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
 </body>
 </html>
