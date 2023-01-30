@@ -118,6 +118,10 @@ nav .fa{
     .row{
         flex-direction: column;
     }
+    .testimonials-col{
+        margin: 10px;
+        
+    }
     .testimonials-col img{
         margin-left: 0;
         margin-right: 15px;
@@ -125,6 +129,7 @@ nav .fa{
     .cta h1{
         font-size: 24px;
     }
+
 }
 /*-- course --*/
 .course{
@@ -301,6 +306,7 @@ p{
     margin-bottom: 40px;
     padding: 0;
 }
+/* footer */
 .footer{
     width: 100%;
     text-align: center;
@@ -310,4 +316,14 @@ p{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+}
+/* icons */
+.icons .fab{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
 }
